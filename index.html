@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyJob CV</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            MyJob <span>CV</span>
+        </div>
+
+        <button class="login-btn">Log in</button>
+    </header>
+
+
+    <main class="hero">
+
+        <div class="hero-text">
+
+            <div class="badge">
+                ✦ Your career, beautifully presented
+            </div>
+
+            <h1>
+                Your CV.<br>
+                <span>Your next opportunity.</span>
+            </h1>
+
+            <p>
+                Create a professional CV, showcase your skills,
+                and share your profile with employers in seconds.
+            </p>
+
+            <button class="primary-btn" onclick="openBuilder()">
+    Create Your CV
+    <span>→</span>
+            </button>
+
+                <button class="secondary-btn">
+                    See how it works
+                </button>
+            </>
+
+        </div>
+
+
+        <div class="cv-card">
+
+            <div class="cv-top">
+                <div class="avatar"></div>
+
+                <div>
+                    <h3>Alex Morgan</h3>
+                    <p>Frontend Developer</p>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="fake-lines">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+        </div>
+
+    </main>
+<section id="builder" class="builder">
+
+    <div class="builder-header">
+        <h2>Create Your CV</h2>
+        <p>Build a professional CV in minutes.</p>
+    </div>
+
+    <div class="builder-content">
+
+        <div class="form-panel">
+
+            <h3>Personal Information</h3>
+
+<input type="text" id="fullName" placeholder="Full Name" oninput="updateCV()">
+
+<input type="text" id="jobTitle" placeholder="Job Title" oninput="updateCV()">
+
+<input type="email" id="email" placeholder="Email" oninput="updateCV()">
+
+<input type="tel" id="phone" placeholder="Phone" oninput="updateCV()">
+
+<input type="text" id="location" placeholder="Location" oninput="updateCV()">
+
+<textarea id="about" placeholder="About Me" oninput="updateCV()"></textarea>
+
+<h3>Experience</h3>
+
+<textarea id="experience" placeholder="Work Experience" oninput="updateCV()"></textarea>
+
+<h3>Education</h3>
+
+<textarea id="education" placeholder="Education" oninput="updateCV()"></textarea>
+
+<h3>Skills</h3>
+
+<input type="text" id="skills" placeholder="Skills" oninput="updateCV()">
+
+        </div>
+
+        <div class="preview-panel">
+
+            <div class="resume-preview">
+
+    <h1 id="previewName">Your Name</h1>
+
+    <h2 id="previewJobTitle">Your Job Title</h2>
+
+    <p class="contact">
+        <span id="previewEmail">email@example.com</span>
+        ·
+        <span id="previewPhone">+00 000 000 000</span>
+        ·
+        <span id="previewLocation">Location</span>
+    </p>
+
+    <hr>
+
+    <h3>About Me</h3>
+    <p id="previewAbout">Your professional summary will appear here.</p>
+
+    <h3>Experience</h3>
+    <p id="previewExperience">Your work experience will appear here.</p>
+
+    <h3>Education</h3>
+    <p id="previewEducation">Your education will appear here.</p>
+
+    <h3>Skills</h3>
+    <p id="previewSkills">Your skills will appear here.</p>
+
+            </div>
+          
+        </div>
+
+    </div>
+
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>
